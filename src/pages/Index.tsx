@@ -1,4 +1,5 @@
 
+import { AboutMe } from "@/components/AboutMe";
 import { Achievements } from "@/components/Achievements";
 import { Certificates } from "@/components/Certificates";
 import { Education } from "@/components/Education";
@@ -12,6 +13,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
+      <AboutMe />
       <Skills />
       <Projects />
       <Education />
