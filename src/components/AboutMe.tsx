@@ -1,7 +1,8 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Card, CardContent } from "./ui/card";
-import { User } from "lucide-react";
+import { Button } from "./ui/button";
+import { Download, FileText, Github, Linkedin, Mail, User } from "lucide-react";
 
 export const AboutMe = () => {
   return (
@@ -16,6 +17,12 @@ export const AboutMe = () => {
                 <User className="w-32 h-32 text-gray-400" />
               </AvatarFallback>
             </Avatar>
+            <Button variant="outline" className="w-full" asChild>
+              <a href="/cv.pdf" download>
+                <FileText className="mr-2" />
+                Download CV
+              </a>
+            </Button>
           </div>
           <Card>
             <CardContent className="pt-6">
@@ -24,11 +31,28 @@ export const AboutMe = () => {
                 Currently pursuing my B.Tech in Computer Science Engineering, I have developed a keen 
                 interest in solving complex problems through coding and implementing innovative solutions.
               </p>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-6">
                 My journey in technology has been marked by continuous learning and practical application 
                 of skills through various projects and coding challenges. I am particularly enthusiastic 
                 about Machine Learning and its potential to transform various industries.
               </p>
+              <div className="flex gap-4 justify-center pt-4 border-t">
+                <Button variant="ghost" size="icon" asChild>
+                  <a href="https://github.com/dEaDsH0T1235" target="_blank" rel="noopener noreferrer">
+                    <Github className="h-5 w-5" />
+                  </a>
+                </Button>
+                <Button variant="ghost" size="icon" asChild>
+                  <a href="https://www.linkedin.com/in/lakshay-singho8/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="h-5 w-5" />
+                  </a>
+                </Button>
+                <Button variant="ghost" size="icon" asChild>
+                  <a href="mailto:lakshaylli235@gmail.com">
+                    <Mail className="h-5 w-5" />
+                  </a>
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </div>
