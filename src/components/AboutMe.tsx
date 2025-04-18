@@ -2,7 +2,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
-import { Download, FileText, Github, Linkedin, Mail, User } from "lucide-react";
+import { FileText, User } from "lucide-react";
 
 export const AboutMe = () => {
   return (
@@ -36,23 +36,6 @@ export const AboutMe = () => {
                 of skills through various projects and coding challenges. I am particularly enthusiastic 
                 about Machine Learning and its potential to transform various industries.
               </p>
-              <div className="flex gap-4 justify-center pt-4 border-t">
-                <Button variant="ghost" size="icon" asChild>
-                  <a href="https://github.com/dEaDsH0T1235" target="_blank" rel="noopener noreferrer">
-                    <Github className="h-5 w-5" />
-                  </a>
-                </Button>
-                <Button variant="ghost" size="icon" asChild>
-                  <a href="https://www.linkedin.com/in/lakshay-singho8/" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="h-5 w-5" />
-                  </a>
-                </Button>
-                <Button variant="ghost" size="icon" asChild>
-                  <a href="mailto:lakshaylli235@gmail.com">
-                    <Mail className="h-5 w-5" />
-                  </a>
-                </Button>
-              </div>
             </CardContent>
           </Card>
         </div>
