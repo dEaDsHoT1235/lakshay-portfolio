@@ -11,7 +11,7 @@ export const AboutMe = () => {
 
     const link = document.createElement("a");
     link.href = pdfPath;
-    link.setAttribute("download", "LakshaySingh_Resume.pdf");
+    link.setAttribute("download", "dEaDsHoT1235/lakshay-portfolio/src/components/General_CV[1].docx");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
