@@ -8,12 +8,12 @@ export const Navbar = () => {
       <h1 className="text-xl font-bold">Lakshay Singh</h1>
       <div className="flex gap-4">
         <Button variant="ghost" size="icon" asChild>
-          <a href="https://github.com/dEaDsH0T1235" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/dEaDsHoT1235" target="_blank" rel="noopener noreferrer">
             <Github className="h-5 w-5" />
           </a>
         </Button>
         <Button variant="ghost" size="icon" asChild>
-          <a href="https://www.linkedin.com/in/lakshay-singho8/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/lakshay-singh08/" target="_blank" rel="noopener noreferrer">
             <Linkedin className="h-5 w-5" />
           </a>
         </Button>

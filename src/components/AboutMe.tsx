@@ -12,7 +12,7 @@ export const AboutMe = () => {
         <div className="grid md:grid-cols-[300px_1fr] gap-8 items-start">
           <div className="flex flex-col items-center gap-4">
             <Avatar className="w-64 h-64">
-              <AvatarImage src="/placeholder.svg" alt="Profile photo" />
+              <AvatarImage src="/lovable-uploads/732e7a6f-3c67-495e-bdc8-ed90f80a98a0.png" alt="Profile photo" />
               <AvatarFallback>
                 <User className="w-32 h-32 text-gray-400" />
               </AvatarFallback>
