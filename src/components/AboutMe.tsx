@@ -1,12 +1,10 @@
+
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { FileText, User } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 export const AboutMe = () => {
-  const navigate = useNavigate();
-
   return (
     <section className="py-16 px-6 bg-gray-50" id="about">
       <div className="max-w-4xl mx-auto">
@@ -14,21 +12,16 @@ export const AboutMe = () => {
         <div className="grid md:grid-cols-[300px_1fr] gap-8 items-start">
           <div className="flex flex-col items-center gap-4">
             <Avatar className="w-64 h-64">
-              <AvatarImage
-                src="/lovable-uploads/732e7a6f-3c67-495e-bdc8-ed90f80a98a0.png"
-                alt="Profile photo"
-              />
+              <AvatarImage src="/lovable-uploads/732e7a6f-3c67-495e-bdc8-ed90f80a98a0.png" alt="Profile photo" />
               <AvatarFallback>
                 <User className="w-32 h-32 text-gray-400" />
               </AvatarFallback>
             </Avatar>
-            <Button
-              variant="outline"
-              className="w-full"
-              onClick={() => navigate("/resume")}
-            >
-              <FileText className="mr-2" />
-              View Resume
+            <Button variant="outline" className="w-full" asChild>
+              <a href="/cv.pdf" download>
+                <FileText className="mr-2" />
+                Download CV
+              </a>
             </Button>
           </div>
           <Card>
