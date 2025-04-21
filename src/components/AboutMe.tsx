@@ -1,10 +1,22 @@
-
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { FileText, User } from "lucide-react";
 
 export const AboutMe = () => {
+  const pdfPath = "/cv.pdf";
+
+  const handleResumeClick = () => {
+    window.open(pdfPath, "_blank", "noopener,noreferrer");
+
+    const link = document.createElement("a");
+    link.href = pdfPath;
+    link.setAttribute("download", "LakshaySingh_Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="py-16 px-6 bg-gray-50" id="about">
       <div className="max-w-4xl mx-auto">
@@ -17,11 +29,9 @@ export const AboutMe = () => {
                 <User className="w-32 h-32 text-gray-400" />
               </AvatarFallback>
             </Avatar>
-            <Button variant="outline" className="w-full" asChild>
-              <a href="/cv.pdf" download>
-                <FileText className="mr-2" />
-                Download CV
-              </a>
+            <Button variant="outline" className="w-full" onClick={handleResumeClick}>
+              <FileText className="mr-2" />
+              Download Resume
             </Button>
           </div>
           <Card>
