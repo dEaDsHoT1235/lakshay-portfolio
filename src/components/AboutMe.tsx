@@ -1,3 +1,4 @@
+
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
@@ -7,11 +8,13 @@ export const AboutMe = () => {
   const pdfPath = "/cv.pdf";
 
   const handleResumeClick = () => {
+    // Open the PDF in a new tab
     window.open(pdfPath, "_blank", "noopener,noreferrer");
 
+    // Create a download link for the PDF
     const link = document.createElement("a");
     link.href = pdfPath;
-    link.setAttribute("download", "dEaDsHoT1235/lakshay-portfolio/src/components/General_CV[1].docx");
+    link.setAttribute("download", "resume.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
