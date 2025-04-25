@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { FileText, User } from "lucide-react";
 
 export const AboutMe = () => {
-  const pdfPath = "/cv.pdf";
+  const pdfPath = "src/components/General_CV[1].docx";
 
   const handleResumeClick = () => {
     // Open the PDF in a new tab
