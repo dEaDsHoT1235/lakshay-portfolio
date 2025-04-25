@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const projects = [
@@ -6,15 +5,13 @@ const projects = [
     title: "Credit Card Fraud Detection Mechanism",
     duration: "Sept 2024-Nov 2024",
     tech: "Python, Pandas, NumPy, Seaborn, Scikit-learn, Git",
-    image:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=600&q=80"
+    image: "/lovable-uploads/f1d8929a-19c1-43df-a9b0-f7b7e1e5239e.png"
   },
   {
     title: "Titanic Survival Analysis",
     duration: "Jun 2024-Jul 2024",
     tech: "Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn",
-    image:
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80"
+    image: "/lovable-uploads/f08d713f-5191-4654-972d-2b15e06ef9fa.png"
   },
   {
     title: "Plastic Waste Management Website",
